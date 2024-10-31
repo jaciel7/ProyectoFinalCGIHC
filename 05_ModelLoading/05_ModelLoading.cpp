@@ -68,6 +68,8 @@ Shader *dynamicShader;
 
 // Carga la información del modelo
 Model	        *house;
+Model* isla; 
+
 // Model *chair, *table;
 AnimatedModel* character;
 
@@ -140,7 +142,8 @@ bool Start() {
 	dynamicShader->setBonesIDs(MAX_RIGGING_BONES);
 
 	// Actividad 2.0: Importar modelo de casa
-	house = new Model("models/pueblo2.fbx");
+	isla = new Model("models/isla4.fbx");
+	house = new Model("models/visor.fbx");
 
 	// Dibujar en distintos modos de despliegue
 	//	   GL_LINE: Modo Malla de alambre
@@ -193,12 +196,23 @@ bool Update() {
 
 		// Aplicamos transformaciones del modelo
 		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::translate(model, glm::vec3(10.0f, 00.0f, -2.0f)); // translate it down so it's at the center of the scene
 		model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
+		model = glm::scale(model, glm::vec3(0.5f, 0.5f, 0.5f));	// it's a bit too big for our scene, so scale it down
 		staticShader->setMat4("model", model);
 
 		house->Draw(*staticShader);
+
+		//dibujamos el pueblo2
+		model = glm::mat4(2.0f);
+		model = glm::translate(model, glm::vec3(2.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+		model = glm::rotate(model, glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	// it's a bit too big for our scene, so scale it down
+		staticShader->setMat4("model", model);
+
+		isla->Draw(*staticShader);
+		 
+
 	} 
 
 	glUseProgram(0);
