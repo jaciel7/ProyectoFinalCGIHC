@@ -68,7 +68,9 @@ Shader *dynamicShader;
 
 // Carga la información del modelo
 Model	        *house;
-Model* isla; 
+Model * isla; 
+Model * hotel1; 
+
 
 // Model *chair, *table;
 AnimatedModel* character;
@@ -142,8 +144,10 @@ bool Start() {
 	dynamicShader->setBonesIDs(MAX_RIGGING_BONES);
 
 	// Actividad 2.0: Importar modelo de casa
+
 	isla = new Model("models/isla4.fbx");
 	house = new Model("models/visor.fbx");
+	hotel1 = new Model("models/puente.fbx");
 
 	// Dibujar en distintos modos de despliegue
 	//	   GL_LINE: Modo Malla de alambre
@@ -211,6 +215,15 @@ bool Update() {
 		staticShader->setMat4("model", model);
 
 		isla->Draw(*staticShader);
+
+		//dibujamos otra cosa 
+		model = glm::mat4(3.0f);
+		model = glm::translate(model, glm::vec3(-5.0f, 0.0f, -1.0f)); // translate it down so it's at the center of the scene
+		model = glm::rotate(model, glm::radians(0.0f), glm::vec3(1.0f, 0.0f, 0.0f));
+		model = glm::scale(model, glm::vec3(0.20f, 0.20f, 0.20f));	// it's a bit too big for our scene, so scale it down
+		staticShader->setMat4("model", model);
+
+		hotel1->Draw(*staticShader);
 		 
 
 	} 
