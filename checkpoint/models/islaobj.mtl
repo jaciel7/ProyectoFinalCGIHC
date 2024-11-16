@@ -1,0 +1,102 @@
+# Blender 4.2.1 LTS MTL File: 'None'
+# www.blender.org
+
+newmtl Default
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/wtrs2.jpg
+
+newmtl default
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/isld1.jpg
+
+newmtl default_Small_Palms
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/Small_Palm_Leaf0.jpg
+
+newmtl default_ferns
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/Small_Palm_Leaf0.jpg
+
+newmtl default_house
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/dwd1.jpg
+
+newmtl default_island_bridge
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/fc1b.jpg
+
+newmtl default_palm_leaves
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/Leaf_CoconutGre0_01.jpg
+
+newmtl default_palm_stems
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/Leaf_CoconutGre0.jpg
+
+newmtl default_rocks2
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/tga1.jpg
+
+newmtl default_walls
+Ns 0.999999
+Ka 1.000000 1.000000 1.000000
+Ks 0.600000 0.600000 0.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/user/Downloads/islat/Small Tropical Island/Maps/fc1b.jpg
